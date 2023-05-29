@@ -13,7 +13,8 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
+          {/* Quando houver sub rotas, como login/criar, login/perdeu etc... precisa dizer para renderiz tudo o que vir depois de login/ */}
+          <Route path="/login/*" element={<Login />} />
         </Routes>
         <Footer />
       </BrowserRouter>
