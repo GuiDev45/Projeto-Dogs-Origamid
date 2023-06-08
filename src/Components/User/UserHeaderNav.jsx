@@ -1,4 +1,4 @@
-import { React, useContext, useState, useEffect } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { UserContext } from '../../UserContext';
 import { ReactComponent as MinhasFotos } from '../../Assets/feed.svg';
