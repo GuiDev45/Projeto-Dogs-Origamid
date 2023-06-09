@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from './UserStatsGraphs.module.css';
 import { VictoryPie, VictoryChart, VictoryBar } from 'victory';
 
@@ -6,7 +6,7 @@ const UserStatsGraphs = ({ data }) => {
   const [graph, setGraph] = useState([]);
   const [total, setTotal] = useState(0);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const graphData = data.map((item) => {
       return {
         x: item.title,

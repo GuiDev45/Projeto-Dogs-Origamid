@@ -1,39 +1,42 @@
-import React, { useState, useRef, useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
+import styles from './PhotoContent.module.css';
+import { Link } from 'react-router-dom';
+import PhotoComments from './PhotoComments';
 import { UserContext } from '../../UserContext';
-import PhotoCommentsForm from './PhotoCommentsForm';
-import styles from './PhotoComments.module.css';
+import PhotoDelete from './PhotoDelete';
+import Image from '../Helper/Image';
 
-const PhotoComments = (props) => {
-  const [comments, setComments] = useState(() => props.comments);
-  const commentsSection = useRef(null);
-  const { login } = useContext(UserContext);
-
-  useEffect(() => {
-    commentsSection.current.scrollTop = commentsSection.current.scrollHeight;
-  }, [comments]);
+const PhotoContent = ({ data, single }) => {
+  const user = useContext(UserContext);
+  const { photo, comments } = data;
 
   return (
-    <>
-      <ul
-        ref={commentsSection}
-        className={`${styles.comments} ${props.single ? styles.single : ''}`}
-      >
-        {comments.map((comment) => (
-          <li key={comment.comment_ID}>
-            <b>{comment.comment_author}: </b>
-            <span>{comment.comment_content}</span>
-          </li>
-        ))}
-      </ul>
-      {login && (
-        <PhotoCommentsForm
-          single={props.single}
-          id={props.id}
-          setComments={setComments}
-        />
-      )}
-    </>
+    <div className={`${styles.photo} ${single ? styles.single : ''}`}>
+      <div className={styles.img}>
+        <Image src={photo.src} alt={photo.title} />
+      </div>
+      <div className={styles.details}>
+        <div>
+          <p className={styles.author}>
+            {user.data && user.data.username === photo.author ? (
+              <PhotoDelete id={photo.id} />
+            ) : (
+              <Link to={`/perfil/${photo.author}`}>@{photo.author}</Link>
+            )}
+            <span className={styles.visualizacoes}>{photo.acessos}</span>
+          </p>
+          <h1 className="title">
+            <Link to={`/foto/${photo.id}`}>{photo.title}</Link>
+          </h1>
+          <ul className={styles.attributes}>
+            <li>{photo.peso} kg</li>
+            <li>{photo.idade} anos</li>
+          </ul>
+        </div>
+      </div>
+      <PhotoComments single={single} id={photo.id} comments={comments} />
+    </div>
   );
 };
 
-export default PhotoComments;
+export default PhotoContent;
