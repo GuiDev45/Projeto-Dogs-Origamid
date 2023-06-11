@@ -13,14 +13,26 @@
 </p>
 
 ## Telas
-![Tela de Login](url_da_imagem)
+
 <table>
   <tr>
     <td>
-      <img src="url_da_imagem1" alt="Texto alternativo 1">
+      <img src="[url_da_imagem1](https://github.com/GuiDev45/Projeto-Dogs-Origamid/blob/master/prints/login.JPG)" alt="Tela de Login">
     </td>
     <td>
-      <img src="url_da_imagem2" alt="Texto alternativo 2">
+      <img src="[url_da_imagem2](https://github.com/GuiDev45/Projeto-Dogs-Origamid/blob/master/prints/PosteSuaFoto.JPG)" alt="Tela poste sua foto">
+    </td>
+    <td>
+      <img src="https://github.com/GuiDev45/Projeto-Dogs-Origamid/blob/master/prints/Minha%20conta.JPG" alt="Tela minha conta">
+    </td>
+    <td>
+      <img src="https://github.com/GuiDev45/Projeto-Dogs-Origamid/blob/master/prints/estatistica%2001.JPG" alt="Tela estatística vazia">
+    </td>
+    <td>
+      <img src="https://github.com/GuiDev45/Projeto-Dogs-Origamid/blob/master/prints/estatistica%2002.JPG" alt="Tela estatística com dados">
+    </td>
+    <td>
+      <img src="https://github.com/GuiDev45/Projeto-Dogs-Origamid/blob/master/prints/galeria.jpg" alt="Tela da galeria">
     </td>
   </tr>
 </table>
