@@ -17,10 +17,10 @@
 <table>
   <tr>
     <td>
-      <img src="[url_da_imagem1](https://github.com/GuiDev45/Projeto-Dogs-Origamid/blob/master/prints/login.JPG)" alt="Tela de Login">
+      <img src="https://github.com/GuiDev45/Projeto-Dogs-Origamid/blob/master/prints/login.JPG" alt="Tela de Login">
     </td>
     <td>
-      <img src="[url_da_imagem2](https://github.com/GuiDev45/Projeto-Dogs-Origamid/blob/master/prints/PosteSuaFoto.JPG)" alt="Tela poste sua foto">
+      <img src="https://github.com/GuiDev45/Projeto-Dogs-Origamid/blob/master/prints/PosteSuaFoto.JPG" alt="Tela poste sua foto">
     </td>
     <td>
       <img src="https://github.com/GuiDev45/Projeto-Dogs-Origamid/blob/master/prints/Minha%20conta.JPG" alt="Tela minha conta">
