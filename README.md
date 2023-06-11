@@ -9,7 +9,7 @@
   <a href="#Como-usar">Como usar</a> •
   <a href="#Dependências-de-Produção">Dependências de Produção</a> •
   <a href="#Dependências-de-Desenvolvimento">Dependências de Desenvolvimento</a> •
-  <a href="#Licença">License</a>
+  <a href="#Licença">Licença</a>
 </p>
 
 ## Telas
